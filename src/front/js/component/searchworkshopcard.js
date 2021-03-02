@@ -10,14 +10,13 @@ export const WorkshopCard = props => {
 	const { actions, store } = useContext(Context);
 
 	return (
-		<div className="workshopCard">
+		<div className="searchWorkshopCard">
 			<div className="cardInformation">
-				<p className="workshopTitle">{props.item.title}</p>
 				<div className="details">
 					<span className="date">Date: {props.item.date}</span>
 					<span className="duration">Duration: {props.item.duration} hours</span>
 					<span className="pax">Pax: {props.item.max_people}</span>
-					<span className="description">Description: {props.item.description}</span>
+					<span className="category">Category: </span>
 				</div>
 			</div>
 			<div className="buttons_workshopCard">
